@@ -3,6 +3,15 @@
     font-family: Arial;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.header, .content, .footer {
+    width: 100%;
+    float: left;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -176,12 +185,24 @@ ul {
         color: #FFF !important;
     }
 }
-/*#endregion */
 
+@media (min-width:768px) {
+}
+/*#endregion */
 /*#region Responsive */
 @media (min-width: 1600px) {
     .container {
         max-width: 1440px;
+    }
+
+    .bg-bottom-project img {
+        /*max-width: 1500px;*/
+        width: 100%;
+    }
+
+    .footer .top-footer div.title {
+        padding-top: 37px;
+        font-weight: 600;
     }
 }
 
@@ -197,8 +218,30 @@ ul {
         left: 66.66666667%;
     }
 
+    .col-md-push-6 {
+        left: 50%;
+    }
+
+    .col-md-pull-3 {
+        right: 25%;
+    }
+
     .col-md-pull-2 {
         right: 16.66666667%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-push-8 {
+        left: 66.66666667%;
     }
 }
 /*#endregion */
@@ -239,7 +282,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /*background: #fff;*/
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -322,6 +365,7 @@ search .bottom-search ul li:hover:after {
 
 /*#region Project */
 #projects {
+    background-color: #fff;
     padding: 50px 0;
 }
 
@@ -369,9 +413,216 @@ search .bottom-search ul li:hover:after {
     margin-bottom: -170px;
 }
 
+#projects .project-name {
+    color: #827e79;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#projects .project-title {
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+    #projects .project-title:hover {
+        color: #cc9036;
+    }
+
 .full {
     float: left;
     width: 100%;
     position: relative;
 }
+
+.view-all {
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .view-all a {
+        border: 1px solid #cc9036;
+        padding: 15px 30px;
+        border-radius: 4px;
+        color: #cc9036;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: Arial;
+        letter-spacing: 2px;
+        background-color: transparent;
+        transition: color 0.3s linear;
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
+        position: relative;
+        z-index: 1;
+    }
+
+.hvr-rectangle-out:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(0.5, 1);
+    transform: scale(0.5, 1);
+}
+/*#endregion */
+
+/*#region Footer */
+.footer {
+    background-color: #152b75;
+    background-image: url(../images/background_footer.svg);
+    background-size: cover;
+    position: relative;
+}
+
+    .footer .top-footer {
+        width: 100%;
+        padding: 50px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .footer .top-footer .info-contact {
+            color: #9fafe3;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+
+            .footer .top-footer .info-contact div.title-company {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: Arial;
+                line-height: 24px;
+                margin: 30px 0;
+            }
+
+            .footer .top-footer .info-contact ul.info {
+                list-style: none;
+                margin-bottom: 30px;
+            }
+
+        .footer .top-footer li {
+            display: block;
+            line-height: 30px;
+            position: relative;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            font-family: Arial;
+        }
+
+        .footer .top-footer .info-contact ul.info li:before {
+            color: #9fafe3;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .footer .top-footer li a {
+            color: #9fafe3;
+        }
+
+        .footer .top-footer .static-page li a i.fa,
+        .footer .top-footer .bds-page li a i.fa
+         {
+            vertical-align: middle;
+            font-size: 6px;
+            color: #cc9036;
+        }
+        .footer .top-footer .social li a i.fab {
+           vertical-align:middle;
+            color: #cc9036;
+        }
+
+        .footer .hotline {
+            background: #cc9036;
+            padding: 10px 30px 10px 20px;
+            border-radius: 5px;
+            display: table;
+        }
+
+        .footer .hotline .hotline-icon, .footer .hotline ul {
+            display: inline-block;
+            color: #fff;
+            vertical-align: middle;
+        }
+
+        .footer .hotline .hotline-icon {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            padding: 2px 9px;
+            height: 37px;
+            line-height: 35px;
+        }
+
+            .footer .hotline .hotline-icon i {
+                font-size: 20px;
+            }
+
+        .footer .hotline .hotline-icon, .footer .hotline ul {
+            display: inline-block;
+            color: #fff;
+            vertical-align: middle;
+        }
+
+        .footer .hotline ul {
+            padding-left: 10px;
+        }
+
+        .footer .hotline li {
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            padding: 0;
+        }
+
+            .footer .hotline li:last-child {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+    .footer .top-footer li:last-child {
+        padding-bottom: 0;
+    }
+
+    .footer .top-footer .register {
+        color: #9fafe3;
+        font-family: Arial;
+    }
+
+    .footer .top-footer div.title {
+        color: #dedede;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+    .footer .top-footer div.title {
+        padding-top: 40px;
+        font-size: 14px;
+    }
+
+
 /*#endregion */
