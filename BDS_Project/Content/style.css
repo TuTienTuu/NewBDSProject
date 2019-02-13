@@ -189,6 +189,7 @@ ul {
 @media (min-width:768px) {
 }
 /*#endregion */
+
 /*#region Responsive */
 @media (min-width: 1600px) {
     .container {
@@ -671,14 +672,14 @@ search .bottom-search ul li:hover:after {
 
 /*#region content */
 /*#region left */
-#news .content-post h2.title {
+#new .content-post h2.title {
     padding: 20px 0;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 26px;
     clear: both;
 }
-#news .content-post .content h3 {
+#new .content-post .content h3 {
     float: left;
     display: inline-block;
     color: #0000ff;
@@ -688,7 +689,7 @@ search .bottom-search ul li:hover:after {
     font-size: 18.6667px;
     font-weight: bold;
 }
-#news .title-post {
+#new .title-post {
     float: left;
     display: inline-block;
     width: 90%;
@@ -700,7 +701,7 @@ search .bottom-search ul li:hover:after {
 }
     /*#endregion */
     /*#region right */
-    #news .title {
+    #new .title {
         padding: 7px 15px;
         margin: 0 0 15px;
         background: -webkit-radial-gradient(circle, #2b396c, #182243);
@@ -710,12 +711,12 @@ search .bottom-search ul li:hover:after {
         text-align: center;
     }
 
-#news ul {
+#new ul {
     padding: 0px 10px;
     box-sizing: border-box;
 }
 
-    #news ul li {
+    #new ul li {
         /*width: 100%;*/
         padding: 4px;
         box-sizing: border-box;
@@ -725,17 +726,17 @@ search .bottom-search ul li:hover:after {
         /*clear: both;*/
     }
 
-        #news ul li h3 {
+        #new ul li h3 {
             line-height: 14px;
         }
 
-            #news ul li h3 a {
+            #new ul li h3 a {
                 text-transform: uppercase;
                 line-height: 14px;
                 font-size: 14px;
             }
 
-        #news ul li .thumb {
+        #new ul li .thumb {
             float: left;
             padding: 0 15px 0 0;
             margin: 0;
@@ -804,4 +805,10 @@ ul.breadcrumb {
                 z-index: 2;
             }
 /*#endregion */
+/*#endregion */
+
+/*#region news */
+
+
+
 /*#endregion */
